@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="All About Audio is a practical DIY car-audio toolkit with impedance, power, wiring, troubleshooting, and build-planning tools." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="All About Audio | Loud Builds. Less Guesswork." />
+  <meta property="og:description" content="Free DIY car-audio calculators, checklists, guides, and a build planner." />
+  <meta property="og:type" content="website" />
+  <title>All About Audio | Loud Builds. Less Guesswork.</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ff4d00'/><rect x='6' y='14' width='4' height='10' rx='2' fill='white'/><rect x='12' y='9' width='4' height='15' rx='2' fill='white'/><rect x='18' y='6' width='4' height='18' rx='2' fill='white'/><rect x='24' y='12' width='4' height='12' rx='2' fill='white'/></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo" aria-label="All About Audio home">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="10" width="3" height="8" rx="1.5"/><rect x="7" y="6" width="3" height="12" rx="1.5"/><rect x="12" y="3" width="3" height="15" rx="1.5"/><rect x="17" y="7" width="3" height="11" rx="1.5"/><rect x="22" y="9" width="3" height="9" rx="1.5"/>
+            </svg>
+          </div>
+          <div class="nav-logo-text">All <span>About</span> Audio</div>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#guides">Guides</a></li>
+          <li><a href="#planner">Build Planner</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="#tools" class="btn btn-primary">Use the Tools</a>
+          <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#tools">Tools</a>
+    <a href="#guides">Guides</a>
+    <a href="#planner">Build Planner</a>
+    <a href="#about">About</a>
+    <a href="#tools" class="btn btn-primary">Use the Tools</a>
+  </div>
+
+  <main id="mainContent">
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-grid-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge"><span class="hero-badge-dot"></span> Free DIY Car Audio Toolkit</div>
+            <h1 class="hero-title">Loud<br><span class="accent">Builds.</span><br><span class="outline">Less</span><br>Guesswork.</h1>
+            <p class="hero-desc">Plan your wiring, estimate electrical demand, diagnose common problems, and save your build details without digging through twelve contradictory forum posts written in 2009.</p>
+            <div class="hero-actions">
+              <a href="#tools" class="btn btn-primary"><span aria-hidden="true">⚡</span> Open Calculators</a>
+              <a href="#planner" class="btn btn-outline">Plan My Build</a>
+            </div>
+            <div class="hero-stats" aria-label="Website features">
+              <div class="hero-stat"><div class="hero-stat-num"><span data-count="3">0</span></div><div class="hero-stat-label">Working Tools</div></div>
+              <div class="hero-stat"><div class="hero-stat-num"><span data-count="6">0</span></div><div class="hero-stat-label">Starter Guides</div></div>
+              <div class="hero-stat"><div class="hero-stat-num"><span data-count="100">0</span><span>%</span></div><div class="hero-stat-label">Free to Use</div></div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="equalizer-wrap">
+              <div class="eq-ring"></div><div class="eq-ring"></div><div class="eq-ring"></div>
+              <div class="eq-bars">
+                <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+              </div>
+            </div>
+            <div class="hero-card reveal reveal-delay-2"><div class="hero-card-icon">Ω</div><div><div class="hero-card-title">Impedance Calculator</div><div class="hero-card-sub">See the final load before wiring the amp</div></div></div>
+            <div class="hero-card reveal reveal-delay-3"><div class="hero-card-icon">⚡</div><div><div class="hero-card-title">Electrical Estimator</div><div class="hero-card-sub">Estimate current, fuse, and cable size</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-item">Final Impedance</span><span class="ticker-item">Amplifier Current</span><span class="ticker-item">Wire Size</span><span class="ticker-item">Fuse Estimate</span><span class="ticker-item">Troubleshooting</span><span class="ticker-item">Build Planner</span><span class="ticker-item">Final Impedance</span><span class="ticker-item">Amplifier Current</span><span class="ticker-item">Wire Size</span><span class="ticker-item">Fuse Estimate</span><span class="ticker-item">Troubleshooting</span><span class="ticker-item">Build Planner</span>
+      </div>
+    </div>
+
+    <section class="services" id="tools">
+      <div class="container">
+        <div class="services-header reveal">
+          <span class="section-label">Interactive Tools</span>
+          <h2 class="section-title">Stop Guessing. <span>Calculate It.</span></h2>
+          <p class="section-desc">These tools run entirely in your browser. They are planning aids, not a substitute for the amplifier manual, manufacturer specifications, proper fusing, or a qualified installer.</p>
+        </div>
+
+        <div class="tool-shell reveal">
+          <div class="tool-tabs" role="tablist" aria-label="Car audio tools">
+            <button class="tool-tab active" type="button" role="tab" aria-selected="true" aria-controls="impedancePanel" data-tool-tab="impedance">Final Impedance</button>
+            <button class="tool-tab" type="button" role="tab" aria-selected="false" aria-controls="powerPanel" data-tool-tab="power">Power &amp; Wire</button>
+            <button class="tool-tab" type="button" role="tab" aria-selected="false" aria-controls="troublePanel" data-tool-tab="trouble">Troubleshooter</button>
+          </div>
+
+          <section class="tool-panel active" id="impedancePanel" role="tabpanel" data-tool-panel="impedance">
+            <div class="tool-grid">
+              <form class="calculator-form" id="impedanceForm">
+                <div class="form-field"><label for="subCount">Number of subwoofers</label><select id="subCount"><option value="1">1 sub</option><option value="2">2 subs</option><option value="3">3 subs</option><option value="4">4 subs</option></select></div>
+                <div class="form-field"><label for="voiceCoils">Voice coils per sub</label><select id="voiceCoils"><option value="1">Single voice coil (SVC)</option><option value="2" selected>Dual voice coil (DVC)</option></select></div>
+                <div class="form-field"><label for="coilOhms">Impedance per coil</label><select id="coilOhms"><option value="1">1 ohm</option><option value="2" selected>2 ohms</option><option value="4">4 ohms</option><option value="8">8 ohms</option></select></div>
+                <div class="form-field" id="coilWiringField"><label for="coilWiring">Wire each sub's coils</label><select id="coilWiring"><option value="parallel" selected>Parallel</option><option value="series">Series</option></select></div>
+                <div class="form-field"><label for="subWiring">Wire multiple subs</label><select id="subWiring"><option value="parallel" selected>Parallel</option><option value="series">Series</option></select></div>
+                <button class="btn btn-primary" type="submit">Calculate Load</button>
+              </form>
+
+              <div class="result-card" id="impedanceResult" aria-live="polite">
+                <span class="result-kicker">Estimated final load</span>
+                <div class="result-number">1.00 <span>Ω</span></div>
+                <p class="result-summary">One DVC 2-ohm sub with its coils wired in parallel.</p>
+                <div class="wiring-path"><span>2 Ω coil</span><b>∥</b><span>2 Ω coil</span><b>=</b><strong>1 Ω final</strong></div>
+                <div class="result-alert warning">Confirm your amplifier is stable at the calculated load before connecting it.</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tool-panel" id="powerPanel" role="tabpanel" data-tool-panel="power" hidden>
+            <div class="tool-grid">
+              <form class="calculator-form" id="powerForm">
+                <div class="form-field"><label for="ampRms">Amplifier RMS output</label><div class="input-with-unit"><input id="ampRms" type="number" min="50" max="20000" value="2000" required /><span>watts</span></div></div>
+                <div class="form-field"><label for="ampClass">Amplifier class</label><select id="ampClass"><option value="0.8" selected>Class D (about 80% efficient)</option><option value="0.6">Class AB (about 60% efficient)</option></select></div>
+                <div class="form-field"><label for="systemVoltage">Charging voltage</label><div class="input-with-unit"><input id="systemVoltage" type="number" min="10" max="16" step="0.1" value="13.8" required /><span>volts</span></div></div>
+                <div class="form-field"><label for="cableLength">One-way cable run</label><div class="input-with-unit"><input id="cableLength" type="number" min="1" max="40" value="15" required /><span>feet</span></div></div>
+                <button class="btn btn-primary" type="submit">Estimate Electrical Needs</button>
+              </form>
+
+              <div class="result-card" id="powerResult" aria-live="polite">
+                <span class="result-kicker">Planning estimate</span>
+                <div class="result-metrics">
+                  <div><strong id="currentResult">181 A</strong><span>Approx. current</span></div>
+                  <div><strong id="fuseResult">250 A</strong><span>Suggested max fuse</span></div>
+                  <div><strong id="wireResult">1/0 AWG OFC</strong><span>Starting cable size</span></div>
+                </div>
+                <p class="result-summary" id="powerSummary">At 2,000 watts RMS, 13.8 volts, and 80% efficiency, estimated full-output current is about 181 amps.</p>
+                <div class="result-alert warning">Use oxygen-free copper cable, fuse near the battery, and follow the amplifier and cable manufacturer's limits. High-current wiring can cause fire if undersized or poorly terminated.</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tool-panel" id="troublePanel" role="tabpanel" data-tool-panel="trouble" hidden>
+            <div class="tool-grid">
+              <form class="calculator-form" id="troubleForm">
+                <div class="form-field"><label for="symptom">What is the main symptom?</label><select id="symptom"><option value="no-power">Amplifier will not power on</option><option value="protect">Amplifier goes into protect mode</option><option value="dimming">Lights dim or voltage drops</option><option value="no-bass">Subwoofer plays weak or no bass</option><option value="noise">Whine, hiss, or popping noise</option></select></div>
+                <div class="form-field"><label for="timing">When does it happen?</label><select id="timing"><option value="always">All the time</option><option value="volume">At higher volume</option><option value="startup">At startup or shutdown</option><option value="driving">Only while the engine is running</option></select></div>
+                <button class="btn btn-primary" type="submit">Show Diagnostic Steps</button>
+              </form>
+
+              <div class="result-card checklist-card" id="troubleResult" aria-live="polite">
+                <span class="result-kicker">Start here</span>
+                <h3>Amplifier will not power on</h3>
+                <ol class="diagnostic-list"></ol>
+                <div class="result-alert">Turn the system off before tightening power or ground connections. Disconnect the negative battery terminal before altering main power wiring.</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="guides" id="guides">
+      <div class="container">
+        <div class="guides-header">
+          <div class="reveal"><span class="section-label">Practical Guides</span><h2 class="section-title">Learn the <span>Why</span>, Not Just the Steps</h2><div class="accent-line"></div></div>
+        </div>
+
+        <div class="guide-controls reveal">
+          <label class="search-box" for="guideSearch"><span aria-hidden="true">⌕</span><input id="guideSearch" type="search" placeholder="Search guides..." /></label>
+          <div class="filter-buttons" aria-label="Filter guides">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="electrical">Electrical</button>
+            <button class="filter-btn" type="button" data-filter="installation">Installation</button>
+            <button class="filter-btn" type="button" data-filter="tuning">Tuning</button>
+          </div>
+        </div>
+
+        <div class="guides-grid" id="guidesGrid"></div>
+        <p class="empty-state" id="guideEmpty" hidden>No guide matches that search. Even the internet occasionally runs out of things.</p>
+      </div>
+    </section>
+
+    <section class="planner-section" id="planner">
+      <div class="container">
+        <div class="planner-header reveal">
+          <span class="section-label">Browser-Based Build Planner</span>
+          <h2 class="section-title">Save Your <span>System Plan</span></h2>
+          <p class="section-desc">Keep the important details in one place. Plans are stored only in this browser using local storage, so no account is needed and nobody gets to sell your subwoofer preferences to advertisers.</p>
+        </div>
+
+        <div class="planner-grid reveal">
+          <form class="planner-form" id="buildForm">
+            <div class="form-row">
+              <div class="form-field"><label for="buildName">Build name</label><input id="buildName" type="text" maxlength="60" placeholder="Example: Tahoe daily driver" required /></div>
+              <div class="form-field"><label for="vehicle">Vehicle</label><input id="vehicle" type="text" maxlength="80" placeholder="Year, make, and model" required /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-field"><label for="headUnit">Head unit</label><input id="headUnit" type="text" maxlength="80" placeholder="Brand and model" /></div>
+              <div class="form-field"><label for="amplifier">Amplifier</label><input id="amplifier" type="text" maxlength="80" placeholder="Brand and model" /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-field"><label for="subwoofers">Subwoofer setup</label><input id="subwoofers" type="text" maxlength="100" placeholder="Quantity, size, model, coil configuration" /></div>
+              <div class="form-field"><label for="targetLoad">Target final load</label><select id="targetLoad"><option value="0.5 Ω">0.5 Ω</option><option value="1 Ω" selected>1 Ω</option><option value="2 Ω">2 Ω</option><option value="4 Ω">4 Ω</option><option value="8 Ω">8 Ω</option></select></div>
+            </div>
+            <div class="form-field"><label for="buildNotes">Notes and next steps</label><textarea id="buildNotes" rows="4" maxlength="600" placeholder="Electrical upgrades, box size, wiring questions, parts still needed..."></textarea></div>
+            <div class="form-actions"><button class="btn btn-primary" type="submit">Save Build</button><button class="btn btn-outline" type="button" id="clearBuildForm">Clear Form</button></div>
+            <p class="form-status" id="buildStatus" aria-live="polite"></p>
+          </form>
+
+          <div class="saved-builds-panel">
+            <div class="saved-builds-heading"><div><span class="section-label">Saved Locally</span><h3>Your Builds</h3></div><button class="text-button" type="button" id="exportBuilds">Copy All</button></div>
+            <div class="saved-builds" id="savedBuilds"><div class="empty-builds"><span>🔊</span><p>No builds saved yet. The planner is patiently pretending not to judge.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-img-wrap"><div class="about-img-placeholder"><span class="about-icon-large">🔊</span></div><div class="about-badge-float"><div class="num">V1</div><div class="lbl">Working<br>Prototype</div></div></div>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <span class="section-label">About the Project</span>
+            <h2 class="section-title">Built From <span>Real DIY Experience</span></h2>
+            <div class="accent-line"></div>
+            <p class="section-desc">All About Audio is an evolving portfolio project and practical resource for people building their own car-audio systems. The first version focuses on useful front-end features that can be tested, explained, and improved.</p>
+            <div class="about-features">
+              <div class="about-feature"><span class="about-feature-icon">✓</span><div><div class="about-feature-title">Real Calculations</div><div class="about-feature-desc">Inputs produce usable planning estimates</div></div></div>
+              <div class="about-feature"><span class="about-feature-icon">⌕</span><div><div class="about-feature-title">Searchable Guides</div><div class="about-feature-desc">Filter and open guide content instantly</div></div></div>
+              <div class="about-feature"><span class="about-feature-icon">💾</span><div><div class="about-feature-title">Local Persistence</div><div class="about-feature-desc">Build plans remain after refresh</div></div></div>
+              <div class="about-feature"><span class="about-feature-icon">↔</span><div><div class="about-feature-title">Responsive Design</div><div class="about-feature-desc">Usable from phones through desktops</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-inner reveal">
+          <span class="section-label">Project Feedback</span>
+          <h2 class="section-title">Found a Bug or Have a <span>Tool Idea?</span></h2>
+          <p class="section-desc">Use the feedback form to prepare an email. The form validates your information and opens your default email application. Static websites, in a shocking display of restraint, cannot secretly run an email server.</p>
+          <form class="feedback-form" id="feedbackForm">
+            <div class="form-row"><div class="form-field"><label for="feedbackName">Name</label><input id="feedbackName" type="text" required /></div><div class="form-field"><label for="feedbackEmail">Email</label><input id="feedbackEmail" type="email" required /></div></div>
+            <div class="form-field"><label for="feedbackType">Feedback type</label><select id="feedbackType"><option>Bug report</option><option>Tool suggestion</option><option>Guide request</option><option>General feedback</option></select></div>
+            <div class="form-field"><label for="feedbackMessage">Message</label><textarea id="feedbackMessage" rows="4" required></textarea></div>
+            <button class="btn btn-primary" type="submit">Prepare Email</button>
+            <p class="form-status" id="feedbackStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid compact-footer">
+        <div><a href="#home" class="nav-logo"><div class="nav-logo-icon" aria-hidden="true"><svg viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="10" width="3" height="8" rx="1.5"/><rect x="7" y="6" width="3" height="12" rx="1.5"/><rect x="12" y="3" width="3" height="15" rx="1.5"/><rect x="17" y="7" width="3" height="11" rx="1.5"/><rect x="22" y="9" width="3" height="9" rx="1.5"/></svg></div><div class="nav-logo-text">All <span>About</span> Audio</div></a><p class="footer-brand-desc">DIY car-audio planning tools and beginner-friendly guides. Loud Builds. Less Guesswork.</p></div>
+        <div><h4 class="footer-col-title">Navigate</h4><ul class="footer-links"><li><a href="#tools">Calculators</a></li><li><a href="#guides">Guides</a></li><li><a href="#planner">Build Planner</a></li><li><a href="#about">About</a></li></ul></div>
+        <div><h4 class="footer-col-title">Project Notes</h4><ul class="footer-links"><li><span>HTML, CSS, JavaScript</span></li><li><span>No framework required</span></li><li><span>Data stored in your browser</span></li><li><span>Educational estimates only</span></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-copy">&copy; <span id="currentYear"></span> <span>All About Audio</span>. Portfolio prototype.</p><a href="#home" class="text-button">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <dialog class="guide-modal" id="guideModal" aria-labelledby="guideModalTitle">
+    <button class="modal-close" type="button" id="closeGuideModal" aria-label="Close guide">×</button>
+    <span class="section-label" id="guideModalCategory"></span>
+    <h2 id="guideModalTitle"></h2>
+    <p class="modal-summary" id="guideModalSummary"></p>
+    <div class="guide-modal-content" id="guideModalContent"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">⇧</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
